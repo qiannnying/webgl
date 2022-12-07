@@ -30,14 +30,6 @@
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
-      
-      screen.orientation.addEventListener("change", function(e) {
-        if(window.matchMedia("(orientation: portrait)")){
-          canvas.style.width = window.innerWidth*90/100 + 'px';
-        }else{
-          canvas.style.width = window.innerWidth*90/100 + 'px';
-        }
-      });
      
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
