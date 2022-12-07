@@ -130,7 +130,19 @@
       var checkOrientation = function(){
           if(window.orientation !== previousOrientation){
               previousOrientation = window.orientation;
-              canvas.style.width = window.innerWidth*90/100 + 'px';
+              switch(previousOrientation)
+              {
+                case -90:
+                case 90:
+                  canvas.style.width = window.innerWidth*80/100 + 'px';
+                  //alert('landscape');
+                  break; 
+                default:
+                  canvas.style.width = window.innerWidth*90/100 + 'px';
+                  //alert('portrait');
+                  break; 
+              }
+              
           }
       };
 
