@@ -67,7 +67,7 @@ body {
 	aspect-ratio: 16/9;
 }
 .item {
-    border: 5px outset red;
+/*     border: 5px outset red; */
      
     text-align: center;
 }
